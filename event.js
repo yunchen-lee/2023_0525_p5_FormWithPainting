@@ -24,12 +24,14 @@ function send() {
             "infoMedia": media,
             "infoFriend": friend
         },
-        success: function(response) {
-            if (response == "成功") {
-                alert("已收到您回覆的表單");
-            }
-        },
+        // success: function(response) {
+        //     if (response == "成功") {
+        //         alert("感謝您的填寫");
+        //     }
+        // },
     });
+
+    document.querySelector('#btn').innerHTML = '已收到您回覆的表單';
 };
 
 sendButton.addEventListener('click', send);
